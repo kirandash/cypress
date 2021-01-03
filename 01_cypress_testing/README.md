@@ -52,3 +52,9 @@
 - Run: `./node_modules/.bin/cypress open`
 - Creates `cypress.json` and `cypress/` with the entire framework(fixtures, integration, plugins, support) and sample test cases.
   - other frameworks does not
+
+### 3.2 Build Cypress basic test and run from test runner
+
+- [Doc](https://docs.cypress.io/guides/getting-started/writing-your-first-test.html)
+- Cypress comes bundled with mocha (describe, it) and chai (expect) for writing test cases
+- `cy.visit()`: Visit a URL
