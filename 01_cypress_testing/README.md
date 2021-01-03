@@ -58,3 +58,37 @@
 - [Doc](https://docs.cypress.io/guides/getting-started/writing-your-first-test.html)
 - Cypress comes bundled with mocha (describe, it) and chai (expect) for writing test cases
 - `cy.visit()`: Visit a URL
+
+### 3.3 Running Cypress tests in Supported Browsers
+
+- Chrome
+- Electron (same engine as chrome but optimized and light weighted)
+  - High performance and stable
+  - Cypress comes with electron by default. No need to install. Other browsers need installation
+- Canary (same engine as chrome)
+- Firefox and Edge (supported in 4.0)
+- To run test on specific browser:
+  - `./node_modules/.bin/cypress run --browser firefox`
+- To run a specific test file:
+  - `npm run cy:run -- --record --spec "cypress/integration/my-spec.js"`
+- Note: Through command line: by default cypress always runs in **headless** mode and in Electron browser.
+  - Can mention explicitly to use something else otherwise
+  - Run tests without opening browser: `./node_modules/.bin/cypress run`
+  - Run headed: `./node_modules/.bin/cypress run --headed`
+    - Will invoke browser, execute and then close
+
+### 3.4 Cypress project framework structure
+
+- **Fixtures:** data for tests
+  - cypress is smart enough to pick data from fixture folder
+- **integration**: test cases
+- **plugins**: listeners to various cypress emits
+  - ex: on browser launch go full screen
+  - not much used
+- **support**:
+  - reusable methods to be available for test cases
+  - can create our own folder but then have to import
+  - support folder will be imported by default with Cypress
+- **cypress.json**:
+  - overrides defauly settingss
+  - default settings can be checked by opening test runner: `./node_modules/.bin/cypress open` and then clicking on settings tab
