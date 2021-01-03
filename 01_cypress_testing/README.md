@@ -44,4 +44,11 @@
 - Install [cypress](https://docs.cypress.io/guides/getting-started/installing-cypress.html)
   - `npm install cypress --save-dev`
 
-## 3.
+## 3. Intro to Cypress test runner and Command line features
+
+### 3.1 What is Cypress Test runner
+
+- Cypress commands must run form cypress .exe file i.e. `node_modules/.bin/cypress`
+- Run: `./node_modules/.bin/cypress open`
+- Creates `cypress.json` and `cypress/` with the entire framework(fixtures, integration, plugins, support) and sample test cases.
+  - other frameworks does not
