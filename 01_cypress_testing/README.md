@@ -106,3 +106,10 @@
 
 - To get auto completion from cypress:
   - `<reference types="Cypress" />`
+
+### 4.3 Basic assertion in writing tests with Cypress
+
+- check products length using `.should` assertion API from chai
+- can time travel in test runner
+- Cypress is very easy in debugging. No other tool can beat it.
+  - we can see what happened on every step with screenshot and error messages in cypress
