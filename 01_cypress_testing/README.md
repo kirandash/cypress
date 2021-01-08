@@ -92,3 +92,17 @@
 - **cypress.json**:
   - overrides defauly settingss
   - default settings can be checked by opening test runner: `./node_modules/.bin/cypress open` and then clicking on settings tab
+
+## 4. Getting started with Cypress and automation
+
+### 4.1 Cypress locator strategies and how to construct them
+
+- Cypress only supports CSS selectors
+- [Demo](https://rahulshettyacademy.com/seleniumPractise/#/)
+  - Ex: tagName, className etc
+- Can use the Cypress test runner inspector to get CSS selector name
+
+### 4.2 Cypress inbuilt plugin in testrunner to generate locators
+
+- To get auto completion from cypress:
+  - `<reference types="Cypress" />`
