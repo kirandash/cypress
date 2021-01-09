@@ -161,3 +161,15 @@
 - `console.log` will appear in browser console
 - **Note:** console.log will log immediately without waiting for cypress commands. Since it is browser related and not test related
 - To control execution of console.log: you will have to manually mention it with .then method
+
+### 5.6 Additional Test, CORS error handling and visiting new page
+
+- **Note**:
+  - CORS error when visiting one page to another can be suppressed by adding: `chromeWebSecurity` to cypress.json file
+  - Try running on electron browser instead of chrome or firefox
+
+## 6. Handling Web Controls using Cypress
+
+### 6.1 How to verify and automate check boxes with Cypress
+
+- [Website](https://rahulshettyacademy.com/AutomationPractice/)
