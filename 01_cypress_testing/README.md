@@ -116,8 +116,13 @@
 
 ## 5. Cypress commands and it's asynchronous nature
 
-### 5.1 get and find commands with Cypress
+### 5.1 get, find and contains commands with Cypress
 
 - limiting target scope so it does not have to search in whole DOM but just the .products selector
 - using parent child chaining
 - `contains`: finds element containing a certain text
+
+### 5.2 Grabbing the text for validations using cypress text, each and includes command
+
+- Note: Use [ChroPath](https://chrome.google.com/webstore/detail/chropath/ljngjbnaijcbncmcnjfhigebomdlkcjo/related?authuser=2) for finding selectors on DOM
+- .each, .text, :includes

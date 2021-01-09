@@ -23,5 +23,15 @@ describe("My First Test suite", () => {
     // alternate not recommended since the html structure might change in future - and hard to understand
     // better to use class name and text based selector like .find and .contains
     cy.get(":nth-child(3) > .product-action > button").click();
+
+    // alternate with .each method so that code is not dependent on index like eq(2)
+    cy.get(".products")
+      .find(".product")
+      .each(($el, index, $list) => {
+        const textVeg = $el.find("h4.product-name").text();
+        if (textVeg.includes("Cashews")) {
+          $el.find("button").click();
+        }
+      });
   });
 });
