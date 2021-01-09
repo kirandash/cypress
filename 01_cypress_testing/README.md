@@ -126,3 +126,22 @@
 
 - Note: Use [ChroPath](https://chrome.google.com/webstore/detail/chropath/ljngjbnaijcbncmcnjfhigebomdlkcjo/related?authuser=2) for finding selectors on DOM
 - .each, .text, :includes
+
+### 5.3 Cypress async nature and it's promise handling
+
+- [Doc](https://docs.cypress.io/guides/core-concepts/introduction-to-cypress.html)
+- Cypress is **async** in nature and there is no guarantee in sequence of execution, but cypress takes care of it.
+  - while selenium is synchronous
+- Promise comes with `rejection`, `resolved` and `pending`
+- `.then()` method will be executed when promise is resolved
+- **Note:** Cypress internally implements promise and then method so the next step is executed only when the first line is finished executing.
+- No need to mention .then meethods in Cypress
+  - Cypress looks like synchronous like Selenium but lot of code is taken care in backend so that test code doesn't look ugly or noisy.
+
+### 5.4 Understanding the diff b/w jQuery methods and Cypress commands
+
+- cypress does not resolve commands as promise when we assign it to a variable
+- only plain commands are resolved
+- so when we assign to variable, we must manually mention .then method to resolve
+- use `cy.log` to log
+- Non cypress commands like `.text()` can not resolve promise by themselves. We need to manually resolve it by then()

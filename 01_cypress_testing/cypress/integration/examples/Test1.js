@@ -33,5 +33,16 @@ describe("My First Test suite", () => {
           $el.find("button").click();
         }
       });
+
+    // cypress does not resolve commands as promise when we assign it to a variable
+    // only plain commands are resolved
+    // so when we assign to variable, we must manually mention .then method to resolve
+    // const logo = cy.get(".brand");
+    // cy.log(logo.text());
+    cy.get(".brand").then(function (logoElement) {
+      cy.log(logoElement.text());
+    });
+    // .text() won't work directly since text is a jQuery command and not available in Cypress
+    // cy.log(cy.get(".brand").text());
   });
 });
