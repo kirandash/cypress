@@ -113,3 +113,11 @@
 - can time travel in test runner
 - Cypress is very easy in debugging. No other tool can beat it.
   - we can see what happened on every step with screenshot and error messages in cypress
+
+## 5. Cypress commands and it's asynchronous nature
+
+### 5.1 get and find commands with Cypress
+
+- limiting target scope so it does not have to search in whole DOM but just the .products selector
+- using parent child chaining
+- `contains`: finds element containing a certain text
