@@ -145,3 +145,19 @@
 - so when we assign to variable, we must manually mention .then method to resolve
 - use `cy.log` to log
 - Non cypress commands like `.text()` can not resolve promise by themselves. We need to manually resolve it by then()
+
+### 5.5 Handling async promises with Cypress - alias
+
+1. **Aliasing**
+
+- In cypress declaring a variable to avoid repittion is not a suggested way. Since then we will have to manually mention .then method to resolve
+- To fix this we can use `aliasing` from cypress
+  - use `as` and `@`
+
+2. **cy.log vs console.log**:
+
+- in selenium logs appear in test driver but since cypress works directly on browser. we can use console.log to print something in broswer console
+- `cy.log` will appear in test runner log
+- `console.log` will appear in browser console
+- **Note:** console.log will log immediately without waiting for cypress commands. Since it is browser related and not test related
+- To control execution of console.log: you will have to manually mention it with .then method

@@ -19,7 +19,14 @@ describe("My First Test suite", () => {
     cy.get(".products").find(".product").should("have.length", 4);
 
     // click add to cart on 3rd product
-    cy.get(".products").find(".product").eq(2).contains("ADD TO CART").click();
+    cy.get(".products")
+      .find(".product")
+      .eq(2)
+      .contains("ADD TO CART")
+      .click()
+      .then(function () {
+        console.log("console log after add to cart");
+      });
     // alternate not recommended since the html structure might change in future - and hard to understand
     // better to use class name and text based selector like .find and .contains
     cy.get(":nth-child(3) > .product-action > button").click();
@@ -44,5 +51,15 @@ describe("My First Test suite", () => {
     });
     // .text() won't work directly since text is a jQuery command and not available in Cypress
     // cy.log(cy.get(".brand").text());
+
+    // Aliasing
+    cy.get(".products").as("productLocator");
+    cy.get("@productLocator").find(".product").should("have.length", 4);
+
+    cy.log("CY Log");
+    console.log("Console Log");
+
+    // assert if logo is displayed correctly
+    cy.get(".brand").should("have.text", "GREENKART");
   });
 });
