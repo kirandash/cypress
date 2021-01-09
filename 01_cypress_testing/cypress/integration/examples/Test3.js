@@ -13,5 +13,8 @@ describe("My Third Test suite", () => {
 
     // Run test on all checkboxes - check 2nd and 3rd checkbox
     cy.get("input[type='checkbox']").check(["option2", "option3"]);
+
+    // static dropdown
+    cy.get("select").select("option2").should("have.value", "option2");
   });
 });

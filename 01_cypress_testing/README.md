@@ -178,3 +178,7 @@
 - use `.and` to concatenate assertion
 - `uncheck`
 - `check` with array for controlling more than one checkbox
+
+### 6.2 Handling static dropdowns using select command with Cypress
+
+- `select`
