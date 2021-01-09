@@ -1,5 +1,4 @@
 {
-  "baseUrl": "https://rahulshettyacademy.com/seleniumPractise/#/",
   "chromeWebSecurity": false,
   "defaultCommandTimeout": 6000,
   "pageLoadTimeout": 10000

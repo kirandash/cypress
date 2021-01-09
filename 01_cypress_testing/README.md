@@ -173,3 +173,8 @@
 ### 6.1 How to verify and automate check boxes with Cypress
 
 - [Website](https://rahulshettyacademy.com/AutomationPractice/)
+- `.check()` method
+- `.should('be.checked')`: use `.be` for behavior check and `.have` for property or value check
+- use `.and` to concatenate assertion
+- `uncheck`
+- `check` with array for controlling more than one checkbox
