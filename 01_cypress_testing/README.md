@@ -184,3 +184,9 @@
 - `select`
 
 ### 6.3 Handling Dynamic dropdowns with each command iteration
+
+### 6.4 Handling visible and invisible elements using assertions in Cypress
+
+- `be.visible`
+- `not.be.visible`
+- `be.checked` - for radio buttons

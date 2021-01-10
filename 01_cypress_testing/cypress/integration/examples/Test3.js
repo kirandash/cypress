@@ -28,5 +28,15 @@ describe("My Third Test suite", () => {
 
     // assertion
     cy.get("#autocomplete").should("have.value", "India");
+
+    // 4. Handling visible and invisible elements using assertions in Cypress
+    cy.get("#displayed-text").should("be.visible");
+    cy.get("#hide-textbox").click();
+    cy.get("#displayed-text").should("not.be.visible");
+    cy.get("#show-textbox").click();
+    cy.get("#displayed-text").should("be.visible");
+
+    // radio buttons
+    cy.get("[value='radio2']").check().should("be.checked");
   });
 });
