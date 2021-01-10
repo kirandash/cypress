@@ -190,3 +190,16 @@
 - `be.visible`
 - `not.be.visible`
 - `be.checked` - for radio buttons
+
+## 7. Advance automation to handling Alerts, pop ups, child windows using Cypress, jQuery
+
+### 7.1 How Cypress auto handles Alerts in Web Apps with cy.on and window:alert
+
+- Test4.js
+- Cypress auto confirms alerts and pop ups - auto clicks on Ok, No need to mentioin
+- Cypress has capability to listen to browser events
+- `cy.on`: to manage events
+- [Docs](https://docs.cypress.io/api/events/catalog-of-events.html#App-Events)
+- `window:alert` is the event which gets fired on alert open
+- so we are using this event to get access to that alert
+- Note: We won't be able to see the alerts or confirms in cypress test
