@@ -220,3 +220,9 @@
 - [docs](https://docs.cypress.io/api/commands/go.html)
 - `url` command: Get the current URL of the page that is currently active.
 - [docs](https://docs.cypress.io/api/commands/url.html)
+
+### 7.4 Handling Web Tables with Cypress using each command
+
+- `next`: Get the immediately following sibling of each DOM element within a set of DOM elements.
+  - [Docs](https://docs.cypress.io/api/commands/next.html#Syntax)
+  - can only be applied on `.get` command
