@@ -213,3 +213,10 @@
   - Remove target blank so that window opens in same window. So that cypress opens the new url in same tab or window
 - How to remove target attribute
   - using `invoke`, a cypress fn to invoke/call `removeattr`, a jquery fn
+
+### 7.3 Navigating browser controls using Cypress
+
+- `go` command: Navigate back or forward to the previous or next URL in the browser’s history.
+- [docs](https://docs.cypress.io/api/commands/go.html)
+- `url` command: Get the current URL of the page that is currently active.
+- [docs](https://docs.cypress.io/api/commands/url.html)

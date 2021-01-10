@@ -25,5 +25,9 @@ describe("My Fourth Test suite", () => {
     // 7.2 Handling Child tab
     // (invoke - cypress, removeAttr - jQuery)
     cy.get("#opentab").invoke("removeAttr", "target").click();
+
+    // 7.3 Navigating browser controls using Cypress
+    cy.url().should("include", "rahulshettyacademy");
+    cy.go("back");
   });
 });
