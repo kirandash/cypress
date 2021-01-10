@@ -203,3 +203,13 @@
 - `window:alert` is the event which gets fired on alert open
 - so we are using this event to get access to that alert
 - Note: We won't be able to see the alerts or confirms in cypress test
+
+### 7.2 Handling Child tab with combination of Cypress & jQuery commands
+
+- how to switch to another tab in browser
+- Cypress doesn't have any knowledge of switching to other browser tabs. Unlike selenium which allows you to switch
+  - bcoz of architecture to not have flaky testing
+- **Work around**:
+  - Remove target blank so that window opens in same window. So that cypress opens the new url in same tab or window
+- How to remove target attribute
+  - using `invoke`, a cypress fn to invoke/call `removeattr`, a jquery fn

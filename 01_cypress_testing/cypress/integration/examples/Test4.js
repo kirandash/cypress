@@ -21,5 +21,9 @@ describe("My Fourth Test suite", () => {
       // Mocha
       expect(str).to.equal("Hello , Are you sure you want to confirm?");
     });
+
+    // 7.2 Handling Child tab
+    // (invoke - cypress, removeAttr - jQuery)
+    cy.get("#opentab").invoke("removeAttr", "target").click();
   });
 });
