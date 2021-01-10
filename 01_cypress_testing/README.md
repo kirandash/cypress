@@ -182,3 +182,5 @@
 ### 6.2 Handling static dropdowns using select command with Cypress
 
 - `select`
+
+### 6.3 Handling Dynamic dropdowns with each command iteration
