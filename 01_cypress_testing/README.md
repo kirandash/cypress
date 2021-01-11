@@ -226,3 +226,16 @@
 - `next`: Get the immediately following sibling of each DOM element within a set of DOM elements.
   - [Docs](https://docs.cypress.io/api/commands/next.html#Syntax)
   - can only be applied on `.get` command
+
+### 7.5 Handling mouse over pop ups using Cypress
+
+- Mouse over events are Not supported by Cypress unlike selenium
+  - since mouse over is a flaky behavior
+  - in selenium: mouseover sometimes doesn't work correctly and disappears during test
+- **Work around**:
+  - use jQuery `.show()` method
+- Test6.js
+- Alternate: clicking invisible items
+  - [Force click](https://docs.cypress.io/api/commands/click.html#Options)
+- No solution for handling invisible elements in selenium
+  - cypress has
