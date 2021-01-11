@@ -248,3 +248,31 @@
 - **Work around**:
   - Instead of clicking btn, copy URL from href attr and load it in same window
   - remove target blank attribute
+
+### 8.2 Limitations of Frames with Cypress
+
+- iFrames,
+- oAuth
+
+## 9. Cypress Framework - Part 1 - Fixtures and Custom standards
+
+### 9.1 Agenda of framework topics and starting with test building
+
+- Setting up test hooks
+- Data driven testing with fixtures
+- Building cypress custom commands
+- Parametrize test with Multiple data sets
+- Understand and test debugging
+- Build Page object Design Patterns for objects
+- Configuration changes in cypress.json
+- Screenshots and video recording for test
+- Exploring Cypress Dashboard
+- Understand the Environmental variables of Cypress
+- Generate excellent reports for Test execution results
+- Integrate Cypress tests with Jenkins CI
+
+1. Hooks:
+
+- From Mocha
+- [Docs](https://docs.cypress.io/guides/core-concepts/writing-and-organizing-tests.html#Folder-Structure)
+- Ex: `before`, `after`. `beforeEach`, `afterEach`
