@@ -239,3 +239,12 @@
   - [Force click](https://docs.cypress.io/api/commands/click.html#Options)
 - No solution for handling invisible elements in selenium
   - cypress has
+
+## 8. Understand limitations of frames and child windows in Cypress
+
+### 8.1 Handling Child Windows using Cypress with cy.visit
+
+- Cypress can't work on child tabs or child windows
+- **Work around**:
+  - Instead of clicking btn, copy URL from href attr and load it in same window
+  - remove target blank attribute
