@@ -283,3 +283,7 @@
 - all fixtures cofig are recommended to write in before hook
 - `cy.fixture()`
 - access data using `this` keyword
+
+### 9.3 Validating attribute properties and their behavior with Cypress assertions
+
+- `should('have.value')`, `should('have.attr')`, `should('be.disabled')`
