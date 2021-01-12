@@ -287,3 +287,8 @@
 ### 9.3 Validating attribute properties and their behavior with Cypress assertions
 
 - `should('have.value')`, `should('have.attr')`, `should('be.disabled')`
+
+### 9.4 Building Customized Cypress commands for reusing the code
+
+- custom util methods can be written in `support/commands.js` file
+  - Ex: `selectProduct` command
