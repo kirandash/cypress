@@ -276,3 +276,10 @@
 - From Mocha
 - [Docs](https://docs.cypress.io/guides/core-concepts/writing-and-organizing-tests.html#Folder-Structure)
 - Ex: `before`, `after`. `beforeEach`, `afterEach`
+
+### 9.2 Understand how fixture works in driving data
+
+- Cypress will automatically talk with JSON files in fixtures folder
+- all fixtures cofig are recommended to write in before hook
+- `cy.fixture()`
+- access data using `this` keyword
