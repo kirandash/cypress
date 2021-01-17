@@ -351,3 +351,14 @@
 - `./node_modules/.bin/cypress run --spec cypress/integration/examples/Test8Framework.js --env url=http://google.com --headed`: set env variable and run in headed mode. By default it runs headless
 
 - Code cleanup: Move page objects to support module
+- screenshots with teset cases will be created in screenshots folder
+
+## 12 Cypress FW P4 - Dashboard feature with Video recording and Screenshots
+
+### 12.1 Exploring Cypress Dashboard and its feature
+
+- Go to cypress runner and click on run, and click on setup dashboard
+- Setup cypress dashboard and get projectId
+- Run: `cypress run --record --key your-key-here`
+- Test execution can be seen in dashboard
+  - linked with projectId and record key
