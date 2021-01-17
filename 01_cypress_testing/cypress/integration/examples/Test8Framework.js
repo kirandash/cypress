@@ -38,5 +38,6 @@ describe("My Eighth Test suite", () => {
 
     // custom command
     cy.selectProduct("Blackberry");
+    cy.selectProduct("Nokia Edge");
   });
 });

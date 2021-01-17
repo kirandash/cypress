@@ -292,3 +292,7 @@
 
 - custom util methods can be written in `support/commands.js` file
   - Ex: `selectProduct` command
+
+## 10 Cypress framework - Page object design and Test parametrization
+
+### 10.1 Parametrizing the test data from JSON files using each command
