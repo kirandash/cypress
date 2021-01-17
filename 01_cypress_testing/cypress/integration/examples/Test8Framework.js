@@ -34,6 +34,7 @@ describe("My Eighth Test suite", () => {
 
     // 9.4 Building Customized Cypress commands for reusing the code
     // click on shop link in navbar
+    cy.pause();
     cy.get(":nth-child(2) > .nav-link").click();
 
     // custom command

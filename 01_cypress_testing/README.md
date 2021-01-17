@@ -296,3 +296,10 @@
 ## 10 Cypress framework - Page object design and Test parametrization
 
 ### 10.1 Parametrizing the test data from JSON files using each command
+
+1. Set data in fixtures and use forEach to loop through them and run custom command
+
+### 10.2 Test debugging and Pause with Cypress
+
+- `cy.pause()`
+- console log will log app logs and also testing logs
