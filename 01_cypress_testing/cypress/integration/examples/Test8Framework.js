@@ -37,7 +37,12 @@ describe("My Eighth Test suite", () => {
     cy.get(":nth-child(2) > .nav-link").click();
 
     // custom command
-    cy.selectProduct("Blackberry");
-    cy.selectProduct("Nokia Edge");
+    // 10.1 Parametrizing the test data from JSON files using each command
+    // loop through all data from fixtures and run custom command on them
+    this.data.productName.forEach(function (element) {
+      cy.selectProduct(element);
+    });
+    // cy.selectProduct("Blackberry");
+    // cy.selectProduct("Nokia Edge");
   });
 });
