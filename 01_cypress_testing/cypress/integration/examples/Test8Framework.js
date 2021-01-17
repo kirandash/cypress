@@ -1,5 +1,6 @@
 // To get auto completion from cypress
 /// <reference types="Cypress" />
+import HomePage from "../pageObjects/HomePage";
 
 describe("My Eighth Test suite", () => {
   before(function () {
@@ -13,6 +14,9 @@ describe("My Eighth Test suite", () => {
   });
 
   it("My First Test case", function () {
+    // Create new instance of HomePage object
+    const HomePage = new HomePage();
+
     cy.visit("https://rahulshettyacademy.com/angularpractice/");
     cy.get("input[name='name']:nth-child(2)").type(this.data.name);
     cy.get("select").select(this.data.gender);

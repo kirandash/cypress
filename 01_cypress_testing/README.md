@@ -303,3 +303,11 @@
 
 - `cy.pause()`
 - console log will log app logs and also testing logs
+
+### 10.3 Page Object design Pattern
+
+- optimises test cases
+- put all access methods related to one page in one separate class
+- centralizing code so when in future implementation changes, no need to change test everywhere
+- easy for maintenance
+- integration/pageObjects/HomePage.js
