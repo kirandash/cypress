@@ -10,7 +10,7 @@ class HomePage {
     return cy.get("select");
   }
   getEntrepreneur() {
-    cy.get("#inlineRadio3");
+    return cy.get("#inlineRadio3");
   }
   getShopTab() {
     return cy.get(":nth-child(2) > .nav-link");

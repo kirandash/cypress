@@ -311,3 +311,7 @@
 - centralizing code so when in future implementation changes, no need to change test everywhere
 - easy for maintenance
 - integration/pageObjects/HomePage.js
+
+### 10.4 Modifying existing tests into Page object pattern as per Cypress standards
+
+- separate object access from actual test to separate JS class
