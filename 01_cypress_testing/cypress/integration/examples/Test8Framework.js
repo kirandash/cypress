@@ -52,6 +52,32 @@ describe("My Eighth Test suite", () => {
     // Product Page
     productPage.getCheckOutButton().click();
 
+    // 11.3 Implementing sum of product functionality on checkout page
+    var sum = 0;
+    cy.get("tr td:nth-child(4) strong")
+      .each(function (element) {
+        const amount = element.text();
+        var res = amount.split(" ");
+        res = res[1].trim();
+        cy.log(res); // will log in test console not browser console
+        sum = Number(sum) + Number(res);
+      })
+      .then(function () {
+        cy.log(sum);
+      });
+
+    // this will log 0 since this run asynchronously
+    // cy.log(sum);
+
+    // check sum in target element
+    cy.get("h3 strong").then(function (element) {
+      const amount = element.text();
+      var res = amount.split(" ");
+      var total = res[1].trim();
+      expect(Number(total)).to.equal(sum);
+    });
+
+    // Click on Check out button to move to next page
     cy.contains("Checkout").click();
     cy.get("#country").type("India");
     cy.get(".suggestions > ul > li > a").click();

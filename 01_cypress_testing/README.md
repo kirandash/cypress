@@ -332,3 +332,8 @@
 
 - cypress logs are more clearer than selenium
 - `force: true` to forcibly click element which is covered by something else e.g checkbox and label
+
+### 11.3 Implementing sum of product functionality with Cypress
+
+- Note: while comparing data make sure the type is same
+  - Ex: convert string to Number using Number() method
