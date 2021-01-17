@@ -315,3 +315,15 @@
 ### 10.4 Modifying existing tests into Page object pattern as per Cypress standards
 
 - separate object access from actual test to separate JS class
+
+## 11 Cypress Framework - P3- Configuration properties & Environment variables
+
+### 11.1 Implementing Global configuration changes to Cypress FW
+
+- **cypress.json**: `defaultCommandTimeout`: time to wait for next command to run by cypress in case the element is not found
+  - useful in cases where the items might take some time to load
+  - default: 6000ms, in practical can set upto 10000ms
+  - this will apply for all tests
+- can explicitly override this in specific file using `Cypress.config`
+  - [Docs](https://docs.cypress.io/guides/references/configuration.html#Cypress-config)
+- **fixturesFolder**: can change path for fixtures folder
