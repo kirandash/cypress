@@ -343,3 +343,11 @@
 - Add settings to cypress.json file
 - Use `Cypress.env('key')` to get data
 - Note: In selenium we have to create JAR etc
+
+### 11.5 Set Environment Variables from commands
+
+- `./node_modules/.bin/cypress run` : to trigger all test files
+- `./node_modules/.bin/cypress run --spec cypress/integration/examples/Test8Framework.js`: to run specific test file
+- `./node_modules/.bin/cypress run --spec cypress/integration/examples/Test8Framework.js --env url=http://google.com --headed`: set env variable and run in headed mode. By default it runs headless
+
+- Code cleanup: Move page objects to support module
