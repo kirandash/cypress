@@ -4,7 +4,7 @@
 describe("My Sixth Test suite", () => {
   it("My Sixth Test case", () => {
     // visit url
-    cy.visit("https://rahulshettyacademy.com/AutomationPractice/");
+    cy.visit(Cypress.env("url") + "/AutomationPractice/");
 
     // 7.5 Handling mouse over pop ups
     // invoke (cypress) show(jquery)

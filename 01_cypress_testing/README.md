@@ -337,3 +337,9 @@
 
 - Note: while comparing data make sure the type is same
   - Ex: convert string to Number using Number() method
+
+### 11.4 Environment variables in Cypress
+
+- Add settings to cypress.json file
+- Use `Cypress.env('key')` to get data
+- Note: In selenium we have to create JAR etc

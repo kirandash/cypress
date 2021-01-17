@@ -4,7 +4,7 @@
 describe("My Fifth Test suite", () => {
   it("My Fifth Test case", () => {
     // visit url
-    cy.visit("https://rahulshettyacademy.com/AutomationPractice/");
+    cy.visit(Cypress.env("url") + "/AutomationPractice/");
 
     // 7.4 Handling Web Tables
     // loop through all 2nd td

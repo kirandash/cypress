@@ -4,7 +4,7 @@
 describe("My Seventh Test suite", () => {
   it("My Seventh Test case", () => {
     // visit url
-    cy.visit("https://rahulshettyacademy.com/AutomationPractice/");
+    cy.visit(Cypress.env("url") + "/AutomationPractice/");
 
     // 8.1 Handling Child Windows
     // invoke (cypress) show(jquery)

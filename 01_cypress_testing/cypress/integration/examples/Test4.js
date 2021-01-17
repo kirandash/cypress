@@ -4,7 +4,7 @@
 describe("My Fourth Test suite", () => {
   it("My Fourth Test case", () => {
     // visit url
-    cy.visit("https://rahulshettyacademy.com/AutomationPractice/");
+    cy.visit(Cypress.env("url") + "/AutomationPractice/");
 
     // 1. Auto handling of pop ups
     cy.get("#alertbtn").click();

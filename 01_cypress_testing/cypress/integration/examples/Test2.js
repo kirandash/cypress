@@ -4,7 +4,7 @@
 describe("My Second Test suite", () => {
   it("My Second Test case", () => {
     // visit url
-    cy.visit("https://rahulshettyacademy.com/seleniumPractise/#/");
+    cy.visit(Cypress.env("url") + "/seleniumPractise/#/");
 
     // type text in search input
     cy.get(".search-keyword").type("ca");
