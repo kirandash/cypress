@@ -327,3 +327,8 @@
 - can explicitly override this in specific file using `Cypress.config`
   - [Docs](https://docs.cypress.io/guides/references/configuration.html#Cypress-config)
 - **fixturesFolder**: can change path for fixtures folder
+
+### 11.2 Completing E2E execution of the Business flow
+
+- cypress logs are more clearer than selenium
+- `force: true` to forcibly click element which is covered by something else e.g checkbox and label

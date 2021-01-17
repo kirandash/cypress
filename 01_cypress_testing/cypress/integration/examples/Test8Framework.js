@@ -34,7 +34,7 @@ describe("My Eighth Test suite", () => {
 
     // 9.4 Building Customized Cypress commands for reusing the code
     // click on shop link in navbar
-    cy.pause();
+    // cy.pause();
 
     // Explicit cypress config for only this test case - starting from this line till the end of all tests in this file
     Cypress.config("defaultCommandTimeout", 100000);
@@ -51,5 +51,20 @@ describe("My Eighth Test suite", () => {
 
     // Product Page
     productPage.getCheckOutButton().click();
+
+    cy.contains("Checkout").click();
+    cy.get("#country").type("India");
+    cy.get(".suggestions > ul > li > a").click();
+    cy.get("#checkbox2").click({ force: true }); // since checkbox is covered by label and not clickable, we can force click
+    cy.get("input[type='submit']").click();
+    // cy.get(".alert").should(
+    //   "have.text",
+    //   "Success! Thank you! Your order will be delivered in next few weeks :-)."
+    // );
+    cy.get(".alert").then(function (element) {
+      const actualText = element.text();
+      // partial text match when direct comparison does not work
+      expect(actualText.includes("Success")).to.be.true;
+    });
   });
 });
